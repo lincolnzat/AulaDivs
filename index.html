@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - DIVS</title>
+
+    <style>
+        p{
+            margin-left: 60px;
+        }
+        #first{
+         background-color:aquamarine;
+         position: static;
+         width: 50%;
+         height: 1500px;
+        }
+
+        #second{
+         background-color:tomato;
+         position: relative;
+         width:75%;
+         height:120px;
+         left: 10px;
+        }
+
+        #third{
+            background-color:yellowgreen;
+            position: absolute;
+            width:35%;
+            height:45px;
+            right: 15px;
+        }
+
+        #fixed{
+            background-color:steelblue;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 300px;
+            height: 50px;
+        }
+        #sticky{
+            background-color: violet;
+            position: sticky;
+            top: 5px;
+            width: 50%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque, ipsam nostrum accusamus dicta, nisi aperiam placeat suscipit officiis culpa eos sit inventore recusandae hic iusto nemo harum. Exercitationem, eius!</p>
+
+    <!--Div com position: sticky é sempre posicionado com base na posição de rolagem da página-->
+    <div id="sticky">
+        <h1>Div pegajosa</h1>
+        </div>
+    <!--Tag <div> serve para alterar o estilo em partes específicas da página e posicionar objetos-->
+        <!--Div com position: static é sempre posicionado de acordo com o fluxo normal da página-->
+<div id="first">
+    <h1>Primeira DIV</h1>
+    <!--Div com position: relative é sempre posicionado em relação a sua posição original/inicial/normal-->
+    <div id="second">
+        <h1>Segunda DIV</h1>
+        <!--Div com position: absolute é sempre posicionado em relação a seu ancestral posicionado mais próximo-->
+        <div id="third">
+            <p>Terceira DIV</p>
+      </div>
+    </div>
+</div>
+
+<!--Div com position: fixed é sempre posicionado em relação a janela de visualização, permanecendo sempre no mesmo lugar-->
+<div id="fixed">
+<h1>Div fixa </h1>
+</div>
+
+
+
+</div>
+</body>
+</html>
